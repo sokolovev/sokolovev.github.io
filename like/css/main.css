@@ -21,6 +21,7 @@ h2 {
 
 .header {
   font-family: 'Geometria Bold';
+  min-weight: 800px;
 }
 
 section {
