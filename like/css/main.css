@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #f7fcff;
+  min-weight: 800px;
 }
 
 h2 {
