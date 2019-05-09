@@ -1,0 +1,94 @@
+.portfolio-body
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+.portfolio-body-item
+  width: 338px
+  height: 338px
+  margin: 7px
+  position: relative
+  .portfolio-body-item-wrapper
+    position: absolute
+    background: #2d5ee6
+    background: linear-gradient(135deg, #2d5ee6 0%,#3f4fd9 50%,#3f4fd9 52%,#5242cc 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d5ee6', endColorstr='#5242cc',GradientType=1 )
+    opacity: 0
+    width: 355px
+    height: 355px
+    top: -8px
+    left: -7px
+    .wrapper-plus
+      position: absolute
+      right: 48px
+      top: 48px
+    .wrapper-text
+      position: absolute
+      top: 124px
+      left: 39px
+      &-title
+        font-size: 22px
+        font-weight: 900
+        text-transform: uppercase
+        letter-spacing: 0.06em
+        color: #ffed85
+        display: block
+        margin-bottom: 20px
+      &-descr  
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.06em
+        color: #ffffff
+    .wrapper-icons
+      font-size: 14px
+      letter-spacing: 0.06em
+      color: #ffffff
+      font-weight: 300
+      &-view
+        position: absolute
+        bottom: 47px
+        left: 74px
+      &-view::before
+        content: url(../img/portfolio/view.png)
+        position: absolute
+        left: -35px
+        top: 1px
+      &-like
+        position: absolute
+        bottom: 47px
+        left: 210px
+      &-like::before
+        content: url(../img/portfolio/like.png)
+        position: absolute
+        left: -35px
+.portfolio-body-item > img
+  transition: 0.01
+.portfolio-body-item:hover > img
+  transform: translateY(-8px) translateX(-7px)
+  width: 355px
+  height: 355px
+.portfolio-body-item:hover .portfolio-body-item-wrapper
+  opacity: 0.95
+
+
+
+// background: #2d5ee6
+// background: linear-gradient(135deg, #2d5ee6 0%,#3f4fd9 50%,#3f4fd9 52%,#5242cc 100%)
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d5ee6', endColorstr='#5242cc',GradientType=1 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.portfolio-bottom
+  a
+    margin: auto 
+    margin-top: 57px

@@ -1,0 +1,106 @@
+.header
+  background: url('../img/main-bg.jpg') center no-repeat
+  background-size: cover
+  &-top
+    padding-top: 20px
+    display: flex
+    justify-content: space-between
+    &-logo
+      display: flex
+      &-img
+        margin-right: 10px
+      &-text
+        padding-top: 4px
+        display: flex
+        flex-direction: column
+        span
+          font-size: 8px
+          line-height: 24px
+          font-weight: 300
+          text-transform: uppercase
+          letter-spacing: 0.6em
+    &-nav
+      min-width: 676px
+      max-width: 776px
+      ul
+        margin: 0
+        display: flex
+        justify-content: space-around
+        li
+          padding-top: 14px
+          padding-bottom: 20px
+          transition: 0.5s
+          font-size: 14px
+          line-height: 28px
+          font-weight: 300
+          text-transform: uppercase
+          letter-spacing: 0.05em
+          color: #fefefe
+          height: 100%
+          position: relative
+        li::after
+          content: ""
+          margin-top: 12px
+          border-radius: 5px
+          background: linear-gradient(90.0deg, #ffed85 0%, #ff9975 100%)
+          height: 5px
+          width: 100%
+          display: none
+          position: absolute
+        li:hover
+          color: #ffed85
+          cursor: pointer
+          font-weight: 900
+        li:hover::after
+          display: block
+    &-number
+      padding-top: 13px
+      display: flex
+      color: #ffffff
+      &-img
+        width: 22px
+        height: 22px
+        margin-right: 15px
+        margin-top: 3px
+      &-descr
+        display: flex
+        flex-direction: column
+        .header-top-number-tel
+          line-height: 28px
+          font-weight: 900
+          letter-spacing: 0.12em
+        .header-top-number-sub
+          line-height: 18px
+          font-size: 14px
+          font-weight: 700
+          text-decoration: underline
+          letter-spacing: 0.05em
+          color: #ffb67b
+          background: linear-gradient(90.0deg, #ffed85 0%, #ff9975 100%)
+          background-clip: text
+          cursor: pointer
+  &-bottom
+    margin-top: 110px
+    &-title
+      width: 893px
+      font-size: 50px
+      line-height: 60px
+      font-weight: 900
+      letter-spacing: 0.05em
+      color: #ffffff
+    &-subtitle
+      color: #ffffff
+      margin-top: 58px
+      font-size: 18px
+      line-height: 32px
+      font-weight: 300
+      letter-spacing: 0.02em
+    &-buttons
+      margin-top: 100px
+      padding-bottom: 115px
+      font-size: 20px
+      line-height: 30px
+      font-weight: 500
+      letter-spacing: 0.06em
+      display: flex
+      

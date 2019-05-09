@@ -1,0 +1,75 @@
+.services
+  padding-top: 94px
+  padding-bottom: 92px
+  background: #f4f7ff
+  &-title
+    display: flex
+    justify-content: space-between
+    padding-bottom: 92px
+    div
+      display: flex
+      span
+        font-size: 16px
+        line-height: 28px
+        font-weight: 300
+        letter-spacing: 0.06em
+        color: #1a171b
+        align-self: flex-end
+        margin-right: 92px
+      a
+        margin-top: 10px
+  &-body
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .services-card  
+      width: 450px
+      background-color: #ffffff
+      margin-right: 15px
+      margin-bottom: 16px
+      display: inline-block
+      vertical-align: top
+      &-title
+        padding-top: 26px
+        padding-left: 52px
+        padding-bottom: 25px
+        display: flex
+        img
+          margin-right: 16px
+      p
+        margin: 0
+        padding-left: 50px
+        padding-right: 67px
+        padding-bottom: 35px
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        letter-spacing: 0.035em
+        color: #1a171b
+      &-download
+        background-image: linear-gradient(90.0deg, #2d67ff 0%, #5a44de 100%)
+        font-size: 14px
+        line-height: 28px
+        font-weight: 900
+        text-decoration: underline
+        letter-spacing: 0.06em
+        color: #5845df
+        float: right
+        padding-right: 87px
+        padding-bottom: 52px
+        background-clip: text
+        display: inline-block
+        position: relative
+      &-download::after
+        position: absolute
+        content: url(../img/services/download.png)
+        margin-left: 13px
+        top: 2px
+      &-download:hover::after
+        content: url(../img/services/download-hover.png)
+      &-download:hover
+        color: #ffab78
+    .services-card:nth-child(3n)
+      margin-right: 0    
+.services-items-title
+  padding-top: 13px
