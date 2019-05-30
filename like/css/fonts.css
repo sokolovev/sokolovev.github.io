@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700i,900&display=swap');
+
 @font-face {
-  font-family: 'Geometria Bold';
-  src: url('../fonts/Geometria-Bold.eot');
-  src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Geometria-Bold.woff') format('woff'),
-  url('../fonts/Geometria-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Arial';
+	src: url('../fonts/ArialMT.eot');
+	src: local('Arial'), local('ArialMT'),
+		url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ArialMT.woff') format('woff'),
+		url('../fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/Arial-BoldMT.eot');
+	src: local('Arial Bold'), local('Arial-BoldMT'),
+		url('../fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arial-BoldMT.woff') format('woff'),
+		url('../fonts/Arial-BoldMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
