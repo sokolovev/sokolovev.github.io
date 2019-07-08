@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap&subset=cyrillic')
+
+* 
+	box-sizing: border-box
+body
+  background: #2bcd7f
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  color: #ffffff
+a
+  text-decoration: none
+  color: #fff
+h1, p
+  margin: 0
+ul, li, a
+  margin: 0
+  padding: 0
+img
+  transition: .4s
+li
+  list-style: none
+.activeqwe1
+  transform: translateY(-7px) scale(1.5)
+.activeqwe2
+  transform: translateY(-7px) scale(1.2)
+  color: darken(#fff, 15%)
+  transition: 0.2s
+.menu-button
+  cursor: pointer
+  position: fixed
+  right: 7.5%
+  top: 7.5%
+  z-index: 5
+.main-nav
+  position: absolute
+  display: none
+  height: 100%
+  width: 100%
+  background: rgba(0,0,0, 0.25)
+  z-index: 8
+  ul
+    width: 353px
+    height: 425px
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.15)
+    background-color: #ffffff
+    position: fixed
+    right: 7.6%
+    top: 7.6%
+    border-radius: 45px 0 45px 45px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 10
+    li a
+      color: #2ccd80
+      text-decoration: none
+      line-height: 35px
+      font-size: 24px
+      list-style: none
+.text1, .text2
+  text-transform: uppercase
+.block1-wrapper
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  .block1
+    height: 86%
+    width: 86%
+    position: relative
+    &-logo
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 3
+    &-icons
+      width: 140px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: absolute
+      left: 0
+      bottom: 0
+      transition: 0.2s
+      z-index: 4
+      a
+        transition: 0.2s
+      a:hover
+        transform: translateY(-5px) scale(1.1)
+    &-tell
+      transition: 0.2s
+      z-index: 3
+      position: absolute
+      right: 0
+      bottom: 0
+      font-size: 20px
+    &-down
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      position: absolute
+      z-index: 4
+      animation-duration: 3s
+      animation-delay: 25s
+      animation-iteration-count: infinite
+    &-body
+      left: 50%
+      bottom: 50%
+      position: absolute
+      &-item1, &-item2, &-item3
+        transform: translate(-50%, -50%)
+        position: absolute
+        opacity: 0
+        animation: fade 30s infinite
+      &-item1
+        animation-delay: 0s
+        opacity: 0
+        .text1, .text2
+          transform-origin: 5% 5%
+          transform: rotate(-4deg)
+        .text1
+          font-size: 73px
+          position: absolute
+          width: 101%
+          top: -42px
+          left: -20px
+          z-index: 2
+        .text2
+          z-index: 2
+          top: 27px
+          left: 0
+          font-size: 31px
+          left: -14px
+          position: absolute
+        img
+          transform: translate(-7px, -11px)
+          z-index: 3
+          position: relative
+      &-item2
+        animation-delay: 10s
+        opacity: 0
+        .text1
+          font-size: 73px
+          width: 710px
+          position: absolute
+          top: -27px
+          left: -172px
+        .text2
+          position: absolute
+          font-size: 31px
+          top: 158px
+          left: -176px
+        img
+          position: relative
+          transform: translate(105px, 0px)
+      &-item3
+        animation-delay: 20s  
+        opacity: 0
+        .text1
+          font-size: 73px
+          width: 710px
+          position: absolute
+          top: 63px
+          left: 535px
+        .text2
+          position: absolute
+          font-size: 31px
+          top: 247px
+          left: 539px
+        img
+          position: relative
+          transform: translate(-228px, -2px)
+
+
+@keyframes fade
+  0%
+    opacity: 0
+  10%
+    opacity: 1
+  20%
+    opacity: 1
+  30%
+    opacity: 1
+  40%
+    opacity: 0
+  50%
+    opacity: 0
+  60%
+    opacity: 0
+  70%
+    opacity: 0
+  80%
+    opacity: 0
+  90%
+    opacity: 0
+  100%
+    opacity: 0
+
+.block2-wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  .block2
+    transform: translateX(-3%)
+    width: 85%
+    text-align: center
+    h1
+      font-size: 35px
+      text-transform: uppercase
+    p
+      font-size: 21px
+    li
+      font-size: 21px
+    &-top
+      margin-bottom: 60px
+      h1
+        margin-bottom: 8px
+      p
+        margin-top: 35px
+    &-bottom
+      display: flex
+      justify-content: space-around
+      h1
+        margin-bottom: 34px
+.block3-wrapper
+  width: 100%
+  height: 100%
+  .block3
+    display: flex
+    flex-direction: column
+    &-title
+      margin-left: 3%
+      margin-top: 43px
+      margin-bottom: 23px
+      font-size: 35px
+    &-items
+      display: flex
+      justify-content: center
+      &-item:first-child
+        margin-left: 0
+      &-item:last-child
+        margin-right: 0
+      &-item
+        display: flex
+        flex-direction: column
+        margin: 0 3px
+        .item-img
+          width: 314px
+          height: 213px
+          box-shadow: 0 0 21px rgba(0, 0, 0, 0.1)
+          background-color: #ffffff
+          display: flex
+          justify-content: center
+          align-items: center
+          margin-bottom: 26px
+          border-radius: 51px
+        .item-title
+          font-size: 22px
+          margin-bottom: 25px
+          margin-left: 25px
+        .item-subtitle
+          color: #191919
+          font-size: 19px
+          margin-bottom: 18px
+          margin-left: 25px
+          display: flex
+          flex-direction: column
+        .item-descr
+          margin-left: 25px
+          font-size: 17px
+          margin-bottom: 28px
+        .item-button
+          cursor: pointer
+          margin-left: 10px
+          width: 293px
+          height: 90px
+          box-shadow: 0 0 21px rgba(0, 0, 0, 0.1)
+          background-color: #ffffff
+          display: flex
+          justify-content: center
+          align-items: center
+          border-radius: 25px
+          span
+            text-transform: uppercase
+            font-size: 25px
+            color: #2bcd7f
+    &-popup-wrapper
+      position: absolute
+      height: 100%
+      width: 100%
+      background: rgba(0,0,0, 0.25)
+      z-index: 5
+      display: none
+      .block3-popup
+        margin: auto
+        margin-top: 5%
+        position: relative
+        width: 85%
+        height: 80%
+        background-color: #ffffff
+        box-shadow: 0 0 21px rgba(0, 0, 0, 0.15)
+        border-radius: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+        .popup-close
+          position: absolute
+          top: 4%
+          right: 4%
+          color: #2bcd7f
+          font-size: 43px
+          cursor: pointer
+        .popup-img
+          width: 70%
+    #popUp4
+      .popup-img
+        width: 85%
+    #popUp1
+      .popup-img
+        width: 95%
