@@ -58,7 +58,7 @@ function timerLeft(year,month,day) {
     },1000)
 }
 
-timerLeft(2019, 12, 01);
+timerLeft(2019, 10, 01);
 // год, месяц, число
 // Указывать месяц на 1 меньше чем нужно
 
